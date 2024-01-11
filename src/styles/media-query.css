@@ -1,0 +1,178 @@
+/*
+Mobile First Page
+
+Typical Devices Breakpoint
+
+small screen: to 600px
+smartphone: 768px
+tablet: 768px to 992px
+Desktop: 992px to 1200px
+Big Screen: up 1200px
+*/
+
+@media print { /* IMPRESSÂO */}
+
+/* Config realizado por padrão no mobile first*/
+/* @media screen and (max-width: 375px) {
+  #app {
+    border-color: purple;
+   
+  }
+} */
+
+/* Config realizado por padrão no mobile first*/
+/* @media screen and (min-width: 600px) {
+  #app {
+    border-color: teal;
+   
+  }
+} */
+
+/* Config realizado por padrão no mobile first*/
+@media screen /*and (min-width: 600px)*/ and (min-width: 425px) {
+  #app {
+    border-color: pink;
+  }
+}
+
+/* TABLET */
+@media screen /*and (min-width: 768px)*/ and (min-width: 768px) {
+  #app {
+    border-color: red;
+  }
+}
+
+/* DESKTOP */
+@media screen /*and (min-width: 992px)*/ and (min-width: 1024px) {
+  #app {
+    border-color: purple;
+  }
+
+  section.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10rem 0 2.4rem;
+  }
+
+  ul.menu {
+    width: auto;
+    display: flex;
+    background: none;
+    color: var(--grey-950);
+  }
+
+  ul.menu a {
+    clear: right;
+    margin: 0 1rem;
+    line-height: 7rem;
+    border-bottom: none;
+  }
+
+  #menu-toggle:checked + ul.menu {
+    display: flex;
+  } 
+
+  label.menu-toogle-container {
+    margin: 0 4rem 0 0;;
+    font-size: 2.6rem;
+    line-height: 7rem;
+    display: none;
+    width: 2.6rem;
+    float: right;
+  }
+
+
+/*==========WELCOME-Section Mobile First===========*/
+  section.welcome h1 {
+    text-align: left;
+    font-size: 4.8rem;
+    font-weight: 500;
+    line-height: 6rem;
+    margin-bottom: 4rem;
+    padding-left: 9.3rem;
+  }
+
+  section.welcome button {
+    margin: 0 auto 3rem 9.3rem;
+    padding: 1.25rem 3.4rem;
+    border-radius: 5rem;
+
+    text-align: center;
+    align-self: flex-start;
+    justify-self: flex-start;
+  }
+
+  section.welcome .image-container {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  section.welcome .image-container > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-top: 1.6rem;
+  }
+
+/*==========COMPANY-Section Mobile First===========*/
+  section.company div.company-header {}
+  
+  section.company p {
+    display: flex;
+    align-self: flex-end;
+    max-width: 26rem;
+    line-height: 2.6rem;
+    text-align: start;
+
+    margin-right: 6.2rem;
+  }
+
+  section.company img.company-banner {
+    display: block;
+  }
+
+  section.company div#carousel-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.4rem;
+
+    padding: 0 7.6rem 0;
+
+    overflow-x: initial;
+  }
+
+  section.company div.carousel-item p {
+    margin: 0;
+  }
+
+  section.company div.carousel-item img {
+    object-fit: fill;
+  }
+}
+
+/* BIG SCREEN */
+@media screen and (min-width: 1440px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #app {
+    border-color: black;
+    max-width: 140rem;
+   } 
+}
+
+/* THEME */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

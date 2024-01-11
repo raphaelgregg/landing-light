@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/media-query.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div id="app">
+    <section class="nav">
+      <div>
+        <span class="brand">Brand</span>
+        <label class="menu-toogle-container" for="menu-toggle">
+          <!-- <span class="menu-icon"></span> -->
+          &#9776
+        </label>
+      </div>
+
+      <input id="menu-toggle" type="checkbox" />
+      <ul class="menu">
+        <!-- <a href="#">Energia Eletrica</a>
+        <a href="#">Energia Eletrica</a>
+        <a href="#">Energia Eletrica</a> -->
+        <li><a href="#">Energia Eletrica</a></li>
+        <li><a href="#">Empresa</a></li>
+        <li><a href="#">Clientes</a></li>
+        <li><a href="#">Departamento</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </section>
+    
+    <section class="welcome">
+      <h1>Empresa com energia <br>
+        renovavel com <span>desconto 50%</span>
+      </h1>
+
+      <button>Mais sobre nós</button>
+        
+      <div class="image-container">
+        <img src="../public/image/img1.png" alt="Engenheiro vistoriando campo de Energia Eolica">
+        <div>
+          <p>Graças à nossa moderna oferta de venda<br> de eletricidade, você verá que reduzir<br> custos não é difícil</p>
+          <img src="../public/image/img2.png" alt="Campo de placas de energia solar">
+        </div>
+      </div>
+    </section>
+
+    <section class="company">
+      <div class="company-header">
+        <img src="../public/svg/lamp.svg" alt="icone de lampada">
+        <h1 class="title">Energia verde que cuida do meio ambiente</h1>
+      </div>
+
+      <p>Graças à nossa moderna oferta de venda de eletricidade, você verá que reduzir custos não é difícil</p>
+
+      <img class="company-banner" src="../public/image/img3.png" alt="engenherio observando campo com energia heolica">
+
+      <div id="carousel-wrapper">
+        <div id="carousel-items">
+          <div class="carousel-item">
+            <p>Energia Eletrica</p>
+            <img src="../public/image/img4.png" alt="torre de transmissão de energia">
+          </div>
+
+          <div class="carousel-item">
+            <p>Gás Fuel</p>
+            <img src="../public/image/img5.png" alt="tubulação">
+          </div>
+          
+          <div class="carousel-item">
+            <p>Instalação Fotovoltaica</p>
+            <img src="../public/image/img6.png" alt="placas de energia solar">
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>

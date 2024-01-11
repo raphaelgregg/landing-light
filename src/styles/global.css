@@ -1,0 +1,88 @@
+:root {
+  --backgound: #F8FBF4;
+  --white: #FFFFFF;
+  --gradiente1: rgb(118, 187, 0, 0.95);
+  --gradiente2: rgba(17,18,17,0.95);
+  
+
+  --green-50: #f9ffe5;
+  --green-100: #efffc7;
+  --green-200: #e0ff95;
+  --green-400: #b0f526;
+  --green-500: #90dc06;
+  --green-600: #76bb00;
+  --green-700: #548506;
+  --green-800: #44690b;
+  --green-900: #39580f;
+  --green-950: #1c3201;
+
+  --grey-100: #e7e7e6;
+  --grey-200: #d2d2cf;
+  --grey-300: #b1b2ae;
+  --grey-400: #8a8b85;
+  --grey-500: #686964;
+  --grey-600: #5e5f5b;
+  --grey-700: #50514d;
+  --grey-800: #464644;
+  --grey-900: #3d3d3c;
+  --grey-950: #262725;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* a cada 1rem será considerado 10px */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  /* height: 100vh; */
+  background-color: var(--backgound);
+  color: var(--grey-950);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
+}
+
+body, input, button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  font-weight: 500;
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+#app {
+  border: 1px solid;
+}
